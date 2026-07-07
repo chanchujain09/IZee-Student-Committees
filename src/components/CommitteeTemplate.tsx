@@ -138,7 +138,7 @@ export default function CommitteeTemplate() {
                  </div>
                  <div className="col-span-1 row-span-1 rounded-[2rem] overflow-hidden relative shadow-lg group">
                    <img src={committee.flagshipEvent.image} alt="Event" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                   <div className={cn("absolute inset-0 mix-blend-overlay opacity-40 transition-opacity duration-500 group-hover:opacity-10", committee.color.bg)} />
+                   <div className="absolute inset-0 bg-slate-900/5 group-hover:bg-transparent transition-colors duration-500" />
                  </div>
                  <div className={cn("col-span-1 row-span-1 rounded-[2rem] shadow-lg p-6 md:p-8 flex flex-col justify-center items-center text-center relative overflow-hidden group", committee.color.bg)}>
                     <div className="absolute inset-0 bg-black/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />

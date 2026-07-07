@@ -172,7 +172,7 @@ export default function HubPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight uppercase mb-4 text-white">
-              WHY JOIN A <span className="text-black">COMMITTEE?</span>
+              WHY JOIN A <span className="text-white">COMMITTEE?</span>
             </h2>
             <p className="text-red-100 text-lg max-w-2xl mx-auto font-light">
               Beyond the classroom, this is where you build the skills that matter.
