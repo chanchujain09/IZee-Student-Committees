@@ -36,11 +36,11 @@ export default function HubPage() {
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900 flex items-center min-h-[60vh]">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=2000" 
+            src="https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp" 
             alt="IZee Campus" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40" />
+          <div className="absolute inset-0 bg-black/75" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -58,9 +58,6 @@ export default function HubPage() {
               Where Managers Are Made <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-[#C8102E]">Outside the Classroom.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-slate-300 leading-relaxed font-light mb-10 max-w-3xl">
-              At IZee Business School, learning doesn't stop at lectures. Our student-led committees give you real responsibility — running events, managing brands, and building corporate relationships.
-            </p>
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <button 
                 onClick={() => { document.getElementById('committees-grid')?.scrollIntoView({ behavior: 'smooth' }) }}
@@ -75,19 +72,28 @@ export default function HubPage() {
       </section>
 
       {/* Intro Paragraph */}
-      <section className="py-24 bg-white relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-white relative border-b border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-block"
+            className="flex flex-col md:flex-row items-start gap-12 lg:gap-20"
           >
-            <Icons.Quote className="w-12 h-12 text-slate-200 mx-auto mb-6" />
-            <p className="font-sans text-xl md:text-2xl text-slate-600 leading-relaxed font-light">
-              Each committee operates like a real organization — with defined roles, budgets, targets, and events. <br/><br/>
-              <span className="font-medium text-slate-900">Committee experience at IZee is not an extracurricular add-on; it is a core part of how we build industry-ready professionals.</span>
-            </p>
+            <div className="md:w-1/3 flex-shrink-0">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-slate-900 leading-[1.2] tracking-tight uppercase">
+                Shaping the <br className="hidden md:block" />
+                <span className="text-[#C8102E]">Managers</span> of Tomorrow
+              </h2>
+            </div>
+            <div className="md:w-2/3 md:border-l-2 border-[#C8102E]/20 md:pl-12">
+              <p className="text-lg text-slate-600 leading-relaxed font-light mb-6">
+                Student committees at IZee are structured, student-run bodies mentored by faculty coordinators. Each committee operates like a real organization - with defined roles, budgets, targets, and events - giving members hands-on experience in leadership, teamwork, planning, and execution.
+              </p>
+              <p className="text-xl font-medium text-slate-900 leading-relaxed">
+                Committee experience at IZee is not an extracurricular add-on; <span className="text-[#C8102E]">it is a core part of how we build industry-ready professionals.</span>
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -133,15 +139,15 @@ export default function HubPage() {
                     </div>
 
                     <h2 className="font-display text-2xl font-bold text-slate-900 mb-2 tracking-tight group-hover:text-[#C8102E] transition-colors">{committee.name}</h2>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 flex items-center justify-center">
+                    <p className="text-xs font-bold text-slate-400 uppercase mb-4 flex items-center justify-center !text-center">
                       {committee.fullName}
                     </p>
 
                     <div className="flex-1 flex flex-col items-center w-full">
-                      <h3 className="font-sans text-base font-medium text-slate-700 mb-4 leading-snug px-2">
+                      <h3 className="font-sans text-base font-medium text-slate-700 mb-4 leading-snug px-2 !text-center">
                         "{committee.tagline}"
                       </h3>
-                      <p className="text-slate-500 text-sm leading-relaxed mb-8 font-light">
+                      <p className="text-slate-500 text-sm leading-relaxed mb-8 font-light !text-center">
                         {committee.oneLiner}
                       </p>
                     </div>
@@ -162,13 +168,13 @@ export default function HubPage() {
       </section>
 
       {/* Why Join a Committee */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="py-24 bg-[#C8102E] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight uppercase mb-4">
-              WHY JOIN A <span className="text-red-400">COMMITTEE?</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight uppercase mb-4 text-white">
+              WHY JOIN A <span className="text-black">COMMITTEE?</span>
             </h2>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto font-light">
+            <p className="text-red-100 text-lg max-w-2xl mx-auto font-light">
               Beyond the classroom, this is where you build the skills that matter.
             </p>
           </div>
@@ -188,13 +194,13 @@ export default function HubPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
-                  className="bg-slate-800/50 p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors duration-300"
+                  className="bg-white p-8 rounded-[2rem] shadow-xl text-center hover:-translate-y-2 transition-all duration-300"
                 >
-                  <div className="w-16 h-16 bg-slate-700/50 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-slate-50 text-[#C8102E] rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
                     <IconComponent className="w-8 h-8" strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-display text-lg font-bold mb-3">{item.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed font-light">{item.desc}</p>
+                  <h3 className="font-display text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed font-light">{item.desc}</p>
                 </motion.div>
               );
             })}

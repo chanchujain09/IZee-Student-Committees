@@ -1,15 +1,15 @@
 import { CommitteeData } from './types';
 
-const DUMMY_STUDENT_1 = 'https://images.unsplash.com/photo-1622564026438-116d8442e5d9?auto=format&fit=crop&q=80&w=600';
-const DUMMY_STUDENT_2 = 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=600';
-const DUMMY_STUDENT_3 = 'https://images.unsplash.com/photo-1558222218-b7b54eede3f3?auto=format&fit=crop&q=80&w=600';
-const DUMMY_STUDENT_4 = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=600';
-const DUMMY_STUDENT_5 = 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&q=80&w=600';
+const DUMMY_STUDENT_1 = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600';
+const DUMMY_STUDENT_2 = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600';
+const DUMMY_STUDENT_3 = 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600';
+const DUMMY_STUDENT_4 = 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600';
+const DUMMY_STUDENT_5 = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600';
 
-const DUMMY_EVENT_1 = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1200';
-const DUMMY_EVENT_2 = 'https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=1200';
-const DUMMY_HERO_1 = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600';
-const DUMMY_HERO_2 = 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1600';
+const DUMMY_EVENT_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4073.webp';
+const DUMMY_EVENT_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4073.webp';
+const DUMMY_HERO_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp';
+const DUMMY_HERO_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp';
 
 export const COMMITTEES: CommitteeData[] = [
   {

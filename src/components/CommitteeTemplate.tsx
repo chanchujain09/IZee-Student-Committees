@@ -71,20 +71,11 @@ export default function CommitteeTemplate() {
                 Back to Committees
               </Link>
               
-              <div className="flex items-center gap-6 mb-8">
-                <div className={cn(
-                  "w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center shrink-0 shadow-2xl border-4 border-slate-900/50",
-                  committee.color.bg,
-                  "text-white"
-                )}>
-                  {IconComponent && <IconComponent className="w-10 h-10 sm:w-12 sm:h-12" strokeWidth={2} />}
-                </div>
-                <div>
-                  <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight uppercase drop-shadow-md">{committee.name}</h1>
-                  <p className="text-sm sm:text-base font-bold mt-2 uppercase tracking-widest text-slate-300">
-                    {committee.fullName}
-                  </p>
-                </div>
+              <div className="mb-8">
+                <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight uppercase drop-shadow-md">{committee.name}</h1>
+                <p className="text-sm sm:text-base font-bold mt-2 uppercase tracking-widest text-slate-300">
+                  {committee.fullName}
+                </p>
               </div>
               
               <div className={cn("w-24 h-1.5 mb-8 rounded-full", committee.color.bg)} />
@@ -92,9 +83,6 @@ export default function CommitteeTemplate() {
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-snug mb-6">
                 {committee.tagline}
               </h2>
-              <p className="text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-10 max-w-2xl">
-                {committee.oneLiner}
-              </p>
               
               <button 
                 className={cn(
