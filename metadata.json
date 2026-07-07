@@ -1,0 +1,8 @@
+{
+  "name": "IZee Student Committees",
+  "description": "Hub and committee pages for IZee Institutions",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
