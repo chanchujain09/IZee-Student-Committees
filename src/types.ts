@@ -26,8 +26,10 @@ export type CommitteeData = {
     bg: string; // tailwind class
     border: string; // tailwind class
   };
-  icon: string; // mapped to LucideIcon in components
+  icon: string;
+  logo?: string;
   heroImage: string;
+  cardImage?: string;
   about: string;
   mission: string;
   vision: string;

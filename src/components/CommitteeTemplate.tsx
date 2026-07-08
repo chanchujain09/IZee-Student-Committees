@@ -228,120 +228,49 @@ export default function CommitteeTemplate() {
         </div>
       </section>
 
-      {/* 5. What We Do (Mind Map) */}
-      <section className="py-24 bg-slate-50/50 relative overflow-hidden border-t border-slate-200">
+      {/* 5. What We Do (Grid matching design aspect) */}
+      <section className="py-16 bg-white relative overflow-hidden border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          <div className="text-center mx-auto mb-16 lg:mb-24">
-            <h3 className="text-sm font-bold tracking-widest uppercase text-slate-500 mb-3">Why Us?</h3>
-            <h2 className=" text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-              Advantages of Having <span className={committee.color.text}>{committee.name}</span> in Your Life
+          <div className="text-center mx-auto mb-16 flex flex-col items-center">
+            <h3 className="text-xs font-bold tracking-widest uppercase text-slate-500 mb-2">Why Us?</h3>
+            <h2 className=" text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-4">
+              Advantages of Having <span className={committee.color.text}>{committee.name}</span>
             </h2>
           </div>
 
-          {/* Desktop Mind Map */}
-          <div className="hidden lg:flex items-stretch justify-center relative w-full max-w-5xl mx-auto min-h-[500px]">
-            
-            {/* SVG Connections */}
-            <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
-              {leftItems.map((_, i) => {
-                 const y = (100 / leftItems.length) * (i + 0.5);
-                 return (
-                   <path key={`left-${i}`} d={`M 15 ${y} C 40 ${y}, 40 50, 50 50`} stroke="#cbd5e1" strokeWidth="0.5" fill="none" vectorEffect="non-scaling-stroke" />
-                 );
-              })}
-              {rightItems.map((_, i) => {
-                 const y = (100 / rightItems.length) * (i + 0.5);
-                 return (
-                   <path key={`right-${i}`} d={`M 85 ${y} C 60 ${y}, 60 50, 50 50`} stroke="#cbd5e1" strokeWidth="0.5" fill="none" vectorEffect="non-scaling-stroke" />
-                 );
-              })}
-            </svg>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 max-w-6xl mx-auto justify-center px-4">
+            {committee.whatWeDo.map((item, index) => {
+              const rotationClasses = [
+                '-rotate-2 translate-x-1 translate-y-1',
+                'rotate-2 -translate-x-1 translate-y-1',
+                '-rotate-1 translate-x-2 -translate-y-1',
+                'rotate-1 -translate-x-1 translate-y-2'
+              ];
+              const offsetClass = rotationClasses[index % rotationClasses.length];
 
-            {/* Left Column */}
-            <div className="flex flex-col justify-evenly w-[320px] z-10 py-4 gap-6">
-              {leftItems.map((item, i) => (
-                <div key={i} className="bg-white border border-slate-100 shadow-sm rounded-xl p-4 flex gap-4 relative hover:shadow-md transition-shadow">
-                   <div className={cn("w-10 h-10 rounded-lg flex items-center justify-center shrink-0", committee.color.light, committee.color.text)}>
-                      <Icons.Target className="w-5 h-5" /> 
-                   </div>
-                   <div className="flex flex-col">
-                     <span className="font-bold text-slate-900 text-sm mb-1">{item.title}</span>
-                     <span className="text-xs text-slate-500 leading-relaxed">{item.description}</span>
-                   </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Center Node */}
-            <div className="flex-1 flex items-center justify-center z-10 px-8">
-              <div className="relative">
-                {/* Connecting dots */}
-                <div className="absolute left-[-4px] top-1/2 -translate-y-1/2 w-2 h-2 rounded-full border border-slate-300 bg-white z-20" />
-                <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 w-2 h-2 rounded-full border border-slate-300 bg-white z-20" />
-                
-                <div className={cn("w-48 h-48 rounded-2xl shadow-xl border flex flex-col items-center justify-center relative bg-white overflow-visible", committee.color.border)}>
-                   <div className={cn("absolute inset-0 opacity-5 rounded-2xl", committee.color.bg)} />
-                   
-                   <div className={cn("w-12 h-12 rounded-xl mb-4 flex items-center justify-center text-white shadow-md relative z-10", committee.color.bg)}>
-                      <Icons.Zap className="w-6 h-6" />
-                   </div>
-                   
-                   <h4 className="font-bold text-slate-900 text-center px-4 relative z-10 text-base">What <br/>We Do</h4>
-                   
-                   <div className={cn("absolute -bottom-3 px-5 py-1.5 rounded-full text-white text-xs font-bold shadow-md uppercase tracking-wider", committee.color.bg)}>
-                     Impact
-                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column */}
-            <div className="flex flex-col justify-evenly w-[320px] z-10 py-4 gap-6">
-              {rightItems.map((item, i) => (
-                <div key={i} className="bg-white border border-slate-100 shadow-sm rounded-xl p-4 flex gap-4 relative hover:shadow-md transition-shadow">
-                   <div className={cn("w-10 h-10 rounded-lg flex items-center justify-center shrink-0", committee.color.light, committee.color.text)}>
-                      <Icons.Lightbulb className="w-5 h-5" /> 
-                   </div>
-                   <div className="flex flex-col">
-                     <span className="font-bold text-slate-900 text-sm mb-1">{item.title}</span>
-                     <span className="text-xs text-slate-500 leading-relaxed">{item.description}</span>
-                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile List (hidden on lg) */}
-          <div className="lg:hidden flex flex-col gap-8">
-             <div className="flex justify-center mb-6">
-               <div className={cn("w-48 h-48 rounded-2xl shadow-xl border flex flex-col items-center justify-center relative bg-white", committee.color.border)}>
-                   <div className={cn("absolute inset-0 opacity-5 rounded-2xl", committee.color.bg)} />
-                   <div className={cn("w-12 h-12 rounded-xl mb-4 flex items-center justify-center text-white shadow-md", committee.color.bg)}>
-                      <Icons.Zap className="w-6 h-6" />
-                   </div>
-                   <h4 className="font-bold text-slate-900 text-center px-4 text-base">What <br/>We Do</h4>
-                   <div className={cn("absolute -bottom-3 px-5 py-1.5 rounded-full text-white text-xs font-bold shadow-md uppercase tracking-wider", committee.color.bg)}>
-                     Impact
-                   </div>
-                </div>
-             </div>
-             
-             <div className="grid gap-4 sm:grid-cols-2">
-               {committee.whatWeDo.map((item, index) => (
-                 <div key={index} className="bg-white border border-slate-100 shadow-sm rounded-xl p-4 flex gap-4">
-                    <div className={cn("w-10 h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5", committee.color.light, committee.color.text)}>
-                       <Icons.CheckCircle className="w-5 h-5" /> 
+              return (
+                <div key={index} className="relative flex flex-col items-center group mt-4 lg:mt-0">
+                  {/* Background offset shape */}
+                  <div className={cn("absolute inset-0 rounded-3xl transition-transform duration-500 group-hover:scale-105 opacity-80", committee.color.bg, offsetClass)} />
+                  
+                  {/* Main Card */}
+                  <div className="bg-white rounded-3xl shadow-sm w-full relative z-10 flex flex-col items-center p-6 text-center h-full border border-slate-100 transition-transform duration-500 group-hover:-translate-y-1">
+                    
+                    <div className="mb-4 bg-slate-50 p-3 rounded-full">
+                       <Icons.CheckCircle className={cn("w-6 h-6", committee.color.text)} />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="font-bold text-slate-900 text-sm mb-1">{item.title}</span>
-                      <span className="text-xs text-slate-500 leading-relaxed">{item.description}</span>
-                    </div>
-                 </div>
-               ))}
-             </div>
-          </div>
 
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">{item.title}</h3>
+                    
+                    <p className="text-sm text-slate-500 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 

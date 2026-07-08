@@ -10,6 +10,7 @@ const DUMMY_EVENT_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/R
 const DUMMY_EVENT_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4073.webp';
 const DUMMY_HERO_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp';
 const DUMMY_HERO_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp';
+const DUMMY_CARD_IMAGE = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4059-2.webp';
 
 export const COMMITTEES: CommitteeData[] = [
   {
@@ -27,6 +28,8 @@ export const COMMITTEES: CommitteeData[] = [
     },
     icon: 'Briefcase',
     heroImage: DUMMY_HERO_1,
+    cardImage: DUMMY_CARD_IMAGE,
+    logo: 'https://i.postimg.cc/f3xkx5hX/img1.png',
     about: "iPlace is the student-run placement and corporate relations committee of IZee Business School. Working alongside the institute's placement cell, iPlace members build relationships with recruiters, organize placement drives and pre-placement talks, and prepare fellow students to perform at their best when opportunity knocks.",
     mission: '• Build and maintain strong relationships with recruiting companies and HR leaders.\n• Organize placement drives, pre-placement talks, and corporate networking events.\n• Prepare students through mock interviews, group discussions, and resume workshops.\n• Bridge the gap between what industry needs and what students bring.',
     vision: "To make every IZee graduate placement-ready and every recruiter's experience at IZee seamless — building a placement brand companies return to year after year.",
@@ -41,15 +44,13 @@ export const COMMITTEES: CommitteeData[] = [
       description: 'An annual corporate meet bringing recruiters, alumni, and industry leaders to campus for panels, networking, and hiring conversations.',
       image: DUMMY_EVENT_1
     },
-    team: [
-      { name: 'Dr. Jane Doe', role: 'Faculty Coordinator', image: DUMMY_STUDENT_1 },
-      { name: 'John Smith', role: 'Student Coordinator', image: DUMMY_STUDENT_2 },
-      { name: 'Alice Johnson', role: 'Core Team', image: DUMMY_STUDENT_3 },
-      { name: 'Bob Williams', role: 'Core Team', image: DUMMY_STUDENT_4 },
-      { name: 'Charlie Brown', role: 'Core Team', image: DUMMY_STUDENT_5 },
-      { name: 'Diana Prince', role: 'Core Team', image: DUMMY_STUDENT_1 },
-      { name: 'Evan Davis', role: 'Core Team', image: DUMMY_STUDENT_2 },
-      { name: 'Fiona Clark', role: 'Core Team', image: DUMMY_STUDENT_3 }
+        team: [
+      { name: 'Arockiya Raj', role: 'President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture.webp' },
+      { name: 'Dinesh Kumar R', role: 'Vice President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-1.webp' },
+      { name: 'Ramba Nishma', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-6.webp' },
+      { name: 'Samadhi Yashwanthi', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-9-1.webp' },
+      { name: 'Sankepalli Manasa', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-10.png' },
+      { name: 'Rakesh Kavali', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-5.webp' }
     ]
   },
   {
@@ -67,6 +68,8 @@ export const COMMITTEES: CommitteeData[] = [
     },
     icon: 'Camera',
     heroImage: DUMMY_HERO_2,
+    cardImage: DUMMY_CARD_IMAGE,
+    logo: 'https://i.postimg.cc/GBk9kz1G/img2.png',
     about: "iMedia is the voice and lens of IZee Business School. The committee manages the institute's student-facing social media presence, covers every campus event, produces reels, photos, and stories, and builds the IZee brand in the digital world — giving members real experience in content creation, social media management, and brand communication.",
     mission: '• Manage and grow IZee\'s student-led social media channels with consistent, engaging content.\n• Cover every campus event with professional photo, video, and live updates.\n• Develop students\' skills in content creation, design, videography, and digital communication.\n• Amplify student achievements and campus stories to the outside world.',
     vision: 'To make IZee Business School one of Bangalore\'s most visible and admired B-school brands online — powered entirely by student creativity.',
@@ -81,15 +84,13 @@ export const COMMITTEES: CommitteeData[] = [
       description: 'An annual campus media fest featuring reel-making competitions, photography contests, and creator workshops with Bangalore\'s digital creators.',
       image: DUMMY_EVENT_2
     },
-    team: [
-      { name: 'Faculty Coordinator', role: 'Faculty Coordinator', image: DUMMY_STUDENT_1 },
-      { name: 'Student Coordinator', role: 'Student Coordinator', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 1', role: 'Core Team', image: DUMMY_STUDENT_3 },
-      { name: 'Core Member 2', role: 'Core Team', image: DUMMY_STUDENT_4 },
-      { name: 'Core Member 3', role: 'Core Team', image: DUMMY_STUDENT_5 },
-      { name: 'Core Member 4', role: 'Core Team', image: DUMMY_STUDENT_1 },
-      { name: 'Core Member 5', role: 'Core Team', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 6', role: 'Core Team', image: DUMMY_STUDENT_3 }
+        team: [
+      { name: 'Arockiya Raj', role: 'President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture.webp' },
+      { name: 'Dinesh Kumar R', role: 'Vice President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-1.webp' },
+      { name: 'Ramba Nishma', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-6.webp' },
+      { name: 'Samadhi Yashwanthi', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-9-1.webp' },
+      { name: 'Sankepalli Manasa', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-10.png' },
+      { name: 'Rakesh Kavali', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-5.webp' }
     ]
   },
   {
@@ -107,6 +108,8 @@ export const COMMITTEES: CommitteeData[] = [
     },
     icon: 'Rocket',
     heroImage: DUMMY_HERO_1,
+    cardImage: DUMMY_CARD_IMAGE,
+    logo: 'https://i.postimg.cc/GBk9kz1v/img3.png',
     about: "iGnite is IZee's entrepreneurship and innovation cell — a launchpad for students who want to build, not just study business. From business plan competitions and startup simulations to founder talks and mentorship, iGnite creates an ecosystem where student ideas meet real-world execution, right in the heart of India's startup capital.",
     mission: '• Cultivate an entrepreneurial mindset across the student body.\n• Organize business plan competitions, pitch events, and startup simulations.\n• Connect students with Bangalore\'s founders, investors, and startup ecosystem.\n• Mentor and support student ventures from idea to execution.',
     vision: 'To make IZee a recognized starting point for student entrepreneurs in Bangalore — where at least one student venture takes real shape every year.',
@@ -121,15 +124,13 @@ export const COMMITTEES: CommitteeData[] = [
       description: 'An annual startup pitch competition where student teams present business ideas to a panel of founders and investors for feedback and potential incubation support.',
       image: DUMMY_EVENT_1
     },
-    team: [
-      { name: 'Faculty Coordinator', role: 'Faculty Coordinator', image: DUMMY_STUDENT_1 },
-      { name: 'Student Coordinator', role: 'Student Coordinator', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 1', role: 'Core Team', image: DUMMY_STUDENT_3 },
-      { name: 'Core Member 2', role: 'Core Team', image: DUMMY_STUDENT_4 },
-      { name: 'Core Member 3', role: 'Core Team', image: DUMMY_STUDENT_5 },
-      { name: 'Core Member 4', role: 'Core Team', image: DUMMY_STUDENT_1 },
-      { name: 'Core Member 5', role: 'Core Team', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 6', role: 'Core Team', image: DUMMY_STUDENT_3 }
+        team: [
+      { name: 'Arockiya Raj', role: 'President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture.webp' },
+      { name: 'Dinesh Kumar R', role: 'Vice President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-1.webp' },
+      { name: 'Ramba Nishma', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-6.webp' },
+      { name: 'Samadhi Yashwanthi', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-9-1.webp' },
+      { name: 'Sankepalli Manasa', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-10.png' },
+      { name: 'Rakesh Kavali', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-5.webp' }
     ]
   },
   {
@@ -147,6 +148,8 @@ export const COMMITTEES: CommitteeData[] = [
     },
     icon: 'Music',
     heroImage: DUMMY_HERO_2,
+    cardImage: DUMMY_CARD_IMAGE,
+    logo: 'https://i.postimg.cc/wth3hFdN/img4.png',
     about: "iVibe brings IZee's campus to life. From festivals and cultural nights to sports tournaments and celebrations, the committee curates the experiences that turn a batch of students into a community — while teaching members large-scale event management, budgeting, and coordination skills that every manager needs.",
     mission: '• Organize cultural festivals, celebrations, and talent showcases through the year.\n• Run inter-batch and inter-college sports tournaments promoting fitness and team spirit.\n• Create an inclusive campus where every culture, talent, and tradition is celebrated.\n• Build event management and coordination skills in every member.',
     vision: "To make IZee's campus culture a reason students choose the institute — vibrant, inclusive, and unforgettable.",
@@ -161,15 +164,13 @@ export const COMMITTEES: CommitteeData[] = [
       description: 'The annual cultural and sports fest of IZee Business School, combining competitions, performances, and inter-college participation.',
       image: DUMMY_EVENT_2
     },
-    team: [
-      { name: 'Faculty Coordinator', role: 'Faculty Coordinator', image: DUMMY_STUDENT_1 },
-      { name: 'Student Coordinator', role: 'Student Coordinator', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 1', role: 'Core Team', image: DUMMY_STUDENT_3 },
-      { name: 'Core Member 2', role: 'Core Team', image: DUMMY_STUDENT_4 },
-      { name: 'Core Member 3', role: 'Core Team', image: DUMMY_STUDENT_5 },
-      { name: 'Core Member 4', role: 'Core Team', image: DUMMY_STUDENT_1 },
-      { name: 'Core Member 5', role: 'Core Team', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 6', role: 'Core Team', image: DUMMY_STUDENT_3 }
+        team: [
+      { name: 'Arockiya Raj', role: 'President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture.webp' },
+      { name: 'Dinesh Kumar R', role: 'Vice President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-1.webp' },
+      { name: 'Ramba Nishma', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-6.webp' },
+      { name: 'Samadhi Yashwanthi', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-9-1.webp' },
+      { name: 'Sankepalli Manasa', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-10.png' },
+      { name: 'Rakesh Kavali', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-5.webp' }
     ]
   },
   {
@@ -187,6 +188,8 @@ export const COMMITTEES: CommitteeData[] = [
     },
     icon: 'Heart',
     heroImage: DUMMY_HERO_1,
+    cardImage: DUMMY_CARD_IMAGE,
+    logo: 'https://i.postimg.cc/tsnsgpSM/img5.png',
     about: "iCare represents the conscience of IZee. We are dedicated to giving back to society through structured volunteering, sustainability initiatives, and community outreach programs. It provides students with opportunities to lead social campaigns and create measurable impact.",
     mission: '• Instill a sense of social responsibility in students through community service.\n• Organize campus clean-ups, tree plantations, and sustainability drives.\n• Partner with NGOs for education, healthcare, and rural development projects.\n• Host annual blood donation camps and health awareness programs.',
     vision: 'To build a generation of empathetic leaders who actively contribute to a sustainable and equitable world.',
@@ -201,15 +204,13 @@ export const COMMITTEES: CommitteeData[] = [
       description: 'A month-long social initiative focused on providing education and resources to underprivileged children in the region.',
       image: DUMMY_EVENT_1
     },
-    team: [
-      { name: 'Faculty Coordinator', role: 'Faculty Coordinator', image: DUMMY_STUDENT_1 },
-      { name: 'Student Coordinator', role: 'Student Coordinator', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 1', role: 'Core Team', image: DUMMY_STUDENT_3 },
-      { name: 'Core Member 2', role: 'Core Team', image: DUMMY_STUDENT_4 },
-      { name: 'Core Member 3', role: 'Core Team', image: DUMMY_STUDENT_5 },
-      { name: 'Core Member 4', role: 'Core Team', image: DUMMY_STUDENT_1 },
-      { name: 'Core Member 5', role: 'Core Team', image: DUMMY_STUDENT_2 },
-      { name: 'Core Member 6', role: 'Core Team', image: DUMMY_STUDENT_3 }
+        team: [
+      { name: 'Arockiya Raj', role: 'President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture.webp' },
+      { name: 'Dinesh Kumar R', role: 'Vice President', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-1.webp' },
+      { name: 'Ramba Nishma', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-6.webp' },
+      { name: 'Samadhi Yashwanthi', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-9-1.webp' },
+      { name: 'Sankepalli Manasa', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-10.png' },
+      { name: 'Rakesh Kavali', role: 'Core Member', image: 'https://izeeedu.com/wp-content/uploads/2026/02/Profile-Picture-5.webp' }
     ]
   }
 ];
