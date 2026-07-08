@@ -72,7 +72,7 @@ export default function CommitteeTemplate() {
               </Link>
               
               <div className="mb-8">
-                <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight uppercase drop-shadow-md">{committee.name}</h1>
+                <h1 className=" text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight uppercase drop-shadow-md">{committee.name}</h1>
                 <p className="text-sm sm:text-base font-bold mt-2 uppercase tracking-widest text-slate-300">
                   {committee.fullName}
                 </p>
@@ -80,7 +80,7 @@ export default function CommitteeTemplate() {
               
               <div className={cn("w-24 h-1.5 mb-8 rounded-full", committee.color.bg)} />
               
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-snug mb-6">
+              <h2 className=" text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-snug mb-6">
                 {committee.tagline}
               </h2>
               
@@ -116,8 +116,8 @@ export default function CommitteeTemplate() {
                  <div className={cn("w-12 h-1 rounded-full", committee.color.bg)} />
                  <span className={cn("font-bold tracking-widest uppercase text-sm", committee.color.text)}>About</span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-8">
-                Discover <br/> <span className={committee.color.text}>{committee.name}</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight capitalize mb-8">
+                Discover <span className={committee.color.text}>{committee.name}</span>
               </h2>
               <div className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
                 {committee.about}
@@ -153,7 +153,7 @@ export default function CommitteeTemplate() {
       </section>
 
       {/* 3 & 4. Mission & Vision */}
-      <section className="py-24 bg-white overflow-hidden relative font-sans">
+      <section className="py-24 bg-white overflow-hidden relative ">
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -234,7 +234,7 @@ export default function CommitteeTemplate() {
           
           <div className="text-center mx-auto mb-16 lg:mb-24">
             <h3 className="text-sm font-bold tracking-widest uppercase text-slate-500 mb-3">Why Us?</h3>
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+            <h2 className=" text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
               Advantages of Having <span className={committee.color.text}>{committee.name}</span> in Your Life
             </h2>
           </div>
@@ -364,7 +364,7 @@ export default function CommitteeTemplate() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="font-display text-4xl md:text-6xl font-bold tracking-tight mb-8 uppercase drop-shadow-lg"
+              className=" text-4xl md:text-6xl font-bold tracking-tight mb-8 capitalize drop-shadow-lg"
             >
               {committee.flagshipEvent.title}
             </motion.h3>
@@ -398,45 +398,43 @@ export default function CommitteeTemplate() {
 
       {/* 7. Team */}
       <section className="py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="text-center max-w-3xl mx-auto mb-16 lg:mb-24"
+            className="flex flex-col md:flex-row items-start justify-between mb-16 lg:mb-24 gap-8"
           >
-            <h2 className="text-sm font-bold tracking-widest uppercase text-red-800 mb-4">Leadership</h2>
-            <h3 className="font-display text-4xl md:text-5xl font-bold text-slate-900 tracking-tight uppercase">Meet the Team</h3>
-            <div className="w-16 h-1 bg-red-800 mx-auto mt-6" />
+            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight capitalize">
+              Our Team
+            </h3>
+            <p className="text-slate-600 max-w-md text-base leading-relaxed">
+              Explore our comprehensive suite of key features designed to enhance efficiency, streamline processes, and elevate your experience.
+            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-            {committee.team.map((member, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {committee.team.slice(0, 6).map((member, index) => (
               <motion.div 
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="flex flex-col items-center text-center group bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all"
+                className="relative group rounded-[5px] overflow-hidden aspect-[4/5] bg-slate-200"
               >
-                <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 rounded-full p-1.5 bg-white border-2 border-slate-200 transition-all duration-500 group-hover:border-slate-300">
-                  <div className="w-full h-full rounded-full overflow-hidden bg-slate-100">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  {/* Decorative accent dot */}
-                  <div className={cn(
-                    "absolute bottom-4 right-4 w-6 h-6 rounded-full border-2 border-white shadow-md",
-                    committee.color.bg
-                  )} />
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                
+                {/* White box at the bottom */}
+                <div className="absolute bottom-3 left-3 right-3 bg-white rounded-[5px] p-4 shadow-lg">
+                  <h4 className=" font-bold text-slate-900 text-base mb-0.5">{member.name}</h4>
+                  <p className="text-slate-500 text-xs font-medium">{member.role}</p>
                 </div>
-                <h4 className="font-display text-2xl font-bold text-red-900 mb-1 uppercase tracking-tight">{member.name}</h4>
-                <p className={cn("text-sm font-bold tracking-widest uppercase", committee.color.text)}>{member.role}</p>
               </motion.div>
             ))}
           </div>
