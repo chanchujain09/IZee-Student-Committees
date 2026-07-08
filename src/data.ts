@@ -8,8 +8,8 @@ const DUMMY_STUDENT_5 = 'https://images.unsplash.com/photo-1507003211169-0a1dd72
 
 const DUMMY_EVENT_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4073.webp';
 const DUMMY_EVENT_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4073.webp';
-const DUMMY_HERO_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp';
-const DUMMY_HERO_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp';
+const DUMMY_HERO_1 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4071.webp';
+const DUMMY_HERO_2 = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4071.webp';
 const DUMMY_CARD_IMAGE = 'https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4059-2.webp';
 
 export const COMMITTEES: CommitteeData[] = [

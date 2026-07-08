@@ -71,11 +71,25 @@ export default function CommitteeTemplate() {
                 Back to Committees
               </Link>
               
-              <div className="mb-8">
-                <h1 className=" text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight uppercase drop-shadow-md">{committee.name}</h1>
-                <p className="text-sm sm:text-base font-bold mt-2 uppercase tracking-widest text-slate-300">
-                  {committee.fullName}
-                </p>
+              <div className="mb-8 flex items-center gap-6 lg:gap-8">
+                {committee.logo && (
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-2xl flex items-center justify-center p-2 shadow-xl shadow-black/20 flex-shrink-0 hidden sm:flex">
+                    <img src={committee.logo} alt={committee.name} className="w-full h-full object-contain" />
+                  </div>
+                )}
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-4 sm:hidden mb-4">
+                    {committee.logo && (
+                      <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center p-2 shadow-xl shadow-black/20 flex-shrink-0">
+                        <img src={committee.logo} alt={committee.name} className="w-full h-full object-contain" />
+                      </div>
+                    )}
+                  </div>
+                  <h1 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight uppercase drop-shadow-md">{committee.name}</h1>
+                  <p className="text-sm sm:text-base font-bold mt-2 uppercase tracking-widest text-slate-300">
+                    {committee.fullName}
+                  </p>
+                </div>
               </div>
               
               <div className={cn("w-24 h-1.5 mb-8 rounded-full", committee.color.bg)} />

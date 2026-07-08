@@ -36,7 +36,7 @@ export default function HubPage() {
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900 flex items-center min-h-[60vh]">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4072-1.webp" 
+            src="https://izeeinstitutions.com/wp-content/uploads/2025/01/Rectangle-4060-1.webp" 
             alt="IZee Campus" 
             className="w-full h-full object-cover"
           />
@@ -120,9 +120,9 @@ export default function HubPage() {
 
                   {/* Top left badge */}
                   <div className="relative z-10 p-5 md:p-6">
-                    <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-white shadow-lg overflow-hidden border border-slate-100">
+                    <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-white shadow-lg overflow-hidden border border-slate-100">
                       {committee.logo ? (
-                        <img src={committee.logo} alt={committee.name} className="w-full h-full object-cover" />
+                        <img src={committee.logo} alt={committee.name} className="w-full h-full object-contain p-1" />
                       ) : (
                         <div className="flex flex-col items-center justify-center bg-[#C8102E] w-full h-full">
                           <Icons.Sun className="w-4 h-4 mb-0.5 text-white" strokeWidth={2.5} />
